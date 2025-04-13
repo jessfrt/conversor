@@ -1,13 +1,13 @@
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #0ff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     background: black;
-    overflow-x: hidden;
+    color: #0ff;
 }
 
 body::before {
@@ -138,22 +138,20 @@ button:hover {
 }
 
 footer {
-    margin-top: 40px;
+    margin: 30px 0 20px;
+    text-align: center;
     font-size: 13px;
     color: #0ff;
-    text-align: center;
-    padding: 15px;
     text-shadow: 0 0 5px #0ff;
-    border-top: 1px solid #0ff22;
+    line-height: 1.5;
 }
 
 footer a {
     color: #0ff;
     text-decoration: none;
     margin: 0 5px;
-    transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #00eaea;
+    text-decoration: underline;
 }
