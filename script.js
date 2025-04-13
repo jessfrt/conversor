@@ -21,9 +21,11 @@ btnParaCelsius.addEventListener("click", function () {
 
     if (isNaN(valor)) {
         resultado.textContent = "Por favor, digite uma temperatura válida!";
+        resultado.classList.remove("mostrar");
     } else {
         const convertido = converterParaCelsius(valor);
         resultado.textContent = `${valor} °F equivale a ${convertido} °C`;
+        resultado.classList.add("mostrar");
     }
 });
 
@@ -33,8 +35,10 @@ btnParaFahrenheit.addEventListener("click", function () {
 
     if (isNaN(valor)) {
         resultado.textContent = "Por favor, digite uma temperatura válida!";
+        resultado.classList.remove("mostrar");
     } else {
         const convertido = converterParaFahrenheit(valor);
         resultado.textContent = `${valor} °C equivale a ${convertido} °F`;
+        resultado.classList.add("mostrar");
     }
 });
