@@ -42,3 +42,12 @@ btnParaFahrenheit.addEventListener("click", function () {
         resultado.classList.add("mostrar");
     }
 });
+// Botão voltar ao topo
+const btnTopo = document.getElementById("voltarTopo");
+
+btnTopo.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
