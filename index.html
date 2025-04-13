@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Temperatura</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Temperatura</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Conversor de Temperatura</h1>
+  <!-- Frase de abertura divertida -->
+  <p class="intro-frase">"Seu termômetro que brilha no escuro!"</p>
 
-        <input type="number" id="entradaTemp" placeholder="Digite a temperatura">
+  <!-- Container principal -->
+  <div class="container">
+    <h1>Conversor de Temperatura</h1>
 
-        <div class="botoes">
-            <button id="paraCelsius">Converter para Celsius</button>
-            <button id="paraFahrenheit">Converter para Fahrenheit</button>
-        </div>
+    <input type="number" id="entradaTemp" placeholder="Digite a temperatura">
 
-        <div id="resultado"></div>
+    <div class="botoes">
+      <button id="paraCelsius">Converter para Celsius</button>
+      <button id="paraFahrenheit">Converter para Fahrenheit</button>
     </div>
 
-    <script src="script.js"></script>
+    <div id="resultado"></div>
+  </div>
 
-    <footer>
-        <p>Desenvolvido por <strong>Jéssica Freitas</strong> • 2025💻</p>
-        <p>
-          <a href="https://github.com/jessfrt" target="_blank">GitHub</a> •
-          <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a>
-        </p>
-        <p>"Transformando temperatura em neon desde 2025." 🌐</p>
-      </footer>
-    <button id="voltarTopo" title="Voltar ao topo">⬆️</button>
+  <!-- Rodapé -->
+  <footer>
+    <p>Desenvolvido por <strong>Jéssica Freitas</strong> • 2025 💻</p>
+    <p>
+      <a href="https://github.com/jessfrt" target="_blank">GitHub</a> •
+      <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a>
+    </p>
+    <p><em>"Transformando temperatura em neon desde 2025."</em> 🌐</p>
+  </footer>
+
+  <!-- Botão flutuante para voltar ao topo -->
+  <button id="voltarTopo" title="Voltar ao topo">⬆️</button>
+
+  <!-- Script -->
+  <script src="script.js"></script>
 </body>
 </html>

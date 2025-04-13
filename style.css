@@ -1,15 +1,18 @@
+/* === BASE === */
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
     min-height: 100vh;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #0ff;
+    overflow-x: hidden;
 }
 
+/* === FUNDO ANIMADO === */
 body::before {
     content: "";
     position: fixed;
@@ -27,7 +30,16 @@ body::before {
     100% { background-position: 100% 0%; }
 }
 
-/* Container central */
+/* === FRASE INICIAL === */
+.intro-frase {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0 0 8px #0ff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* === CONTAINER PRINCIPAL === */
 .container {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 12px;
@@ -37,9 +49,10 @@ body::before {
     max-width: 400px;
     text-align: center;
     backdrop-filter: blur(8px);
+    margin-bottom: 30px;
 }
 
-/* Título com brilho digital */
+/* === TÍTULO === */
 h1 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 24px;
@@ -47,7 +60,7 @@ h1 {
     text-shadow: 0 0 5px #0ff, 0 0 10px #00f;
 }
 
-/* Campo de entrada */
+/* === INPUT === */
 #entradaTemp {
     width: 80%;
     padding: 12px;
@@ -65,7 +78,7 @@ h1 {
     opacity: 0.6;
 }
 
-/* Área dos botões */
+/* === BOTÕES === */
 .botoes {
     display: flex;
     flex-direction: column;
@@ -74,7 +87,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Botões com efeito neon */
 button {
     background-color: #0ff;
     color: black;
@@ -95,15 +107,11 @@ button:hover {
 }
 
 @keyframes pulsar {
-    0% {
-        box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
-    }
-    100% {
-        box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
-    }
+    0% { box-shadow: 0 0 10px #0ff, 0 0 20px #0ff; }
+    100% { box-shadow: 0 0 20px #0ff, 0 0 40px #0ff; }
 }
 
-/* Resultado com transição suave */
+/* === RESULTADO === */
 #resultado {
     font-size: 18px;
     min-height: 24px;
@@ -116,7 +124,7 @@ button:hover {
     opacity: 1;
 }
 
-/* Responsividade para celular */
+/* === RESPONSIVO === */
 @media (max-width: 480px) {
     #entradaTemp {
         width: 90%;
@@ -137,8 +145,8 @@ button:hover {
     }
 }
 
+/* === RODAPÉ === */
 footer {
-    margin: 30px 0 20px;
     text-align: center;
     font-size: 13px;
     color: #0ff;
@@ -155,6 +163,8 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* === BOTÃO VOLTAR AO TOPO === */
 #voltarTopo {
     position: fixed;
     bottom: 30px;
